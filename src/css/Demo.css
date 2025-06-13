@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-viewports-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-viewport-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  border: 1px solid #323237;
+}
+
+.grid-viewport-container.active {
+  border: 1px solid #e51b48;
+}
+
+#root {
+  height: 100%;
+}
+
+.top-menu {
+  text-align: center;
+}
+
+.viewer-menu-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex: 1;
+}
+
+button, .button {
+  background-color: #eee;
+  color: #000;
+  padding: 3px;
+  text-decoration: none;
+  border: none;
+  margin: 1px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+div#viewer {
+  position: relative;
+  flex: 1;
+  margin: 40px;
+}
+
+.mouse-function {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  display: flex;
+}
+
+.mouse-function span, .mouse-function label {
+  color: #fff;
+}
+
+.mouse-function input, .custom-study input {
+  max-width: 140px;
+}
+
+.sync-checkbox {
+  position: absolute;
+  right: 3px;
+}
+
